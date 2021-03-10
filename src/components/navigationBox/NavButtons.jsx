@@ -47,19 +47,19 @@ const NavButtons = () => {
         <nav>
             <ul className="nav-links">
             {/* onClick={(e)=>e.target.parentElement.className = "active"} */}
-                <NavLink exact to='/' style={{}} onMouseOver={()=> {setIsRunning(true); setWord("Home")}}
+                <NavLink exact to='/' onMouseOver={()=> {setIsRunning(true); setWord("Home")}}
                         onMouseLeave={()=> {setIsRunning(false);setLink('');setIndex(0);setLeterIndex(0)}}>
                         <li style={{left:"20%"}}>{isRunning && word === "Home" ? l : "Home"}</li>
                 </NavLink>
-                <NavLink to="/about"  style={{}} onMouseOver={()=> {setIsRunning(true); setWord("About")}}
+                <NavLink to="/about" onMouseOver={()=> {setIsRunning(true); setWord("About")}}
                         onMouseLeave={()=> {setIsRunning(false);setLink('');setIndex(0);setLeterIndex(0)}}>
                         <li style={{left:"20%"}}>{isRunning && word === "About"  ? l : "About"}</li>
                 </NavLink>
-                <NavLink to="/my-work" style={{}} onMouseOver={()=> {setIsRunning(true); setWord("My Work")}}
+                <NavLink to="/my-work" onMouseOver={()=> {setIsRunning(true); setWord("My Work")}}
                         onMouseLeave={()=> {setIsRunning(false);setLink('');setIndex(0);setLeterIndex(0)}}>
                         <li style={{left:"6%"}}>{isRunning && word === "My Work"  ? l : "My Work"}</li>
                 </NavLink>
-                <NavLink to="/contact" style={{}} onMouseOver={()=> {setIsRunning(true); setWord("Contact")}}
+                <NavLink to="/contact" onMouseOver={()=> {setIsRunning(true); setWord("Contact")}}
                         onMouseLeave={()=> {setIsRunning(false);setLink('');setIndex(0);setLeterIndex(0)}}>
                         <li style={{left:"10%"}}>{isRunning && word === "Contact"  ? l : "Contact"}</li>
                 </NavLink>

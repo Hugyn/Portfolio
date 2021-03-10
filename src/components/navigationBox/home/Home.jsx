@@ -1,10 +1,8 @@
 import React from 'react'
-
+import './home-styles.css'
 function Home() {
     return (
-        <h1>
-            This is the home page BRUV
-        </h1>
+       <img className='homeImage' src='LogoHN.png'></img>
     )
 }
 
