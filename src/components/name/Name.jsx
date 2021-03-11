@@ -20,6 +20,7 @@ function Name() {
    
 
     useEffect(()=>{
+        
        const id = window.setInterval(()=>{
            if(isRunning){
             setIndex(()=> index + 1)
@@ -32,10 +33,7 @@ function Name() {
                 setIsRunning(false)
              }
            }
-            
-            
-            
-        },5)
+        },3)
         return ()=> window.clearInterval(id)
     },[index, leterIndex, word])
 

@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
 .homeImage{
+    opacity: 0;
     position: fixed;
+    width: 70vw;
+}
+
+
+.welcome {
+    font-size: 3.5vw;
+    position: absolute;
+    z-index: 1002;
+    left: 49vw;
+    display: flex;
+    width: 120px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 4vw;
+}
+
+
+.homeContainer{
+    display: block;
 }
